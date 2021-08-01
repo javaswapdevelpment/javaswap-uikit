@@ -1,4 +1,5 @@
 import { DefaultTheme } from "styled-components";
+import { Colors } from "../../theme/types";
 export interface Props {
     secondary?: boolean;
     isActive?: boolean;
@@ -8,4 +9,7 @@ declare const LinkLabel: import("styled-components").StyledComponent<"div", Defa
     isPushed: boolean;
 }, never>;
 declare const MenuEntry: import("styled-components").StyledComponent<"div", DefaultTheme, Props, never>;
-export { MenuEntry, LinkLabel };
+declare const LinkStatus: import("styled-components").StyledComponent<"div", DefaultTheme, import("../../components/Text").TextProps & {
+    color: keyof Colors;
+}, never>;
+export { MenuEntry, LinkLabel, LinkStatus };

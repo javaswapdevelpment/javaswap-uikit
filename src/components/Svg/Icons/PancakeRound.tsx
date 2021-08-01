@@ -18,7 +18,6 @@ const Icon: React.FC<SvgProps> = (props) => {
       <stop offset="1" stop-color="#9b2244"/>
     </linearGradient>
     <filter id="Elipse_1140" x="0" y="0" width="104" height="104" filterUnits="userSpaceOnUse">
-      <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="8" result="blur"/>
       <feFlood flood-color="#ffc2c2"/>
       <feComposite operator="in" in2="blur"/>

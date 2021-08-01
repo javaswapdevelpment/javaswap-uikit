@@ -24,6 +24,8 @@ export declare type Shadows = {
 };
 export declare type Gradients = {
     bubblegum: string;
+    menuBorder: string;
+    buttonGradient: string;
 };
 export declare type Colors = {
     primary: string;
@@ -42,6 +44,7 @@ export declare type Colors = {
     text: string;
     textDisabled: string;
     textSubtle: string;
+    title: string;
     borderColor: string;
     card: string;
     gradients: Gradients;

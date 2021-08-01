@@ -1,9 +1,31 @@
+import { LinkStatus } from "./types";
+export declare const status: {
+    LIVE: LinkStatus;
+    SOON: LinkStatus;
+    NEW: LinkStatus;
+};
 export declare const links: ({
     label: string;
     icon: string;
     href: string;
     items?: undefined;
-    calloutClass?: undefined;
+    status?: undefined;
+} | {
+    label: string;
+    icon: string;
+    items: {
+        label: string;
+        href: string;
+        icon: string;
+    }[];
+    href?: undefined;
+    status?: undefined;
+} | {
+    label: string;
+    icon: string;
+    href: string;
+    status: LinkStatus;
+    items?: undefined;
 } | {
     label: string;
     icon: string;
@@ -12,16 +34,7 @@ export declare const links: ({
         href: string;
     }[];
     href?: undefined;
-    calloutClass?: undefined;
-} | {
-    label: string;
-    icon: string;
-    items: {
-        label: string;
-        href: string;
-    }[];
-    calloutClass: string;
-    href?: undefined;
+    status?: undefined;
 })[];
 export declare const socials: ({
     label: string;

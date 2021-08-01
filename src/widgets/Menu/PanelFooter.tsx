@@ -13,7 +13,7 @@ import * as IconModule from "./icons";
 import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
 
-interface Props extends PanelProps, PushedProps {}
+interface Props extends PanelProps, PushedProps { }
 
 const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
 const { MoonIcon, SunIcon, LanguageIcon } = Icons;
@@ -47,11 +47,15 @@ const SettingsEntry = styled.div`
 `;
 
 const SocialEntry = styled.div`
+  display: block;
+  align-items: center;
+  padding: 0 16px;
+`;
+
+const SocialIcons = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: ${MENU_ENTRY_HEIGHT}px;
-  padding: 0 16px;
 `;
 
 const PanelFooter: React.FC<Props> = ({
@@ -78,37 +82,44 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <SocialEntry>
-        {cakePriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
-          </PriceLink>
-        ) : (
-          <Skeleton width={80} height={24} />
-        )}
-        <Flex>
-          {socials.map((social, index) => {
-            const Icon = Icons[social.icon];
-            const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-            const mr = index < socials.length - 1 ? "8px" : 0;
-            if (social.items) {
+        <div>
+          {cakePriceUsd ? (
+            <PriceLink href={priceLink} target="_blank">
+              <PancakeRoundIcon width="24px" mr="8px" />
+              <Text fontSize="20px" color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+            </PriceLink>
+          ) : (
+            <Skeleton width={80} height={24} />
+          )}
+        </div>
+        <SocialIcons>
+          <Flex>
+            <Text color="text" fontSize="14px" >Find us in media</Text>
+          </Flex>
+          <Flex>
+            {socials.map((social, index) => {
+              const Icon = Icons[social.icon];
+              const iconProps = { width: "24px", color: "title", style: { cursor: "pointer" } };
+              const mr = index < socials.length - 1 ? "8px" : 0;
+              if (social.items) {
+                return (
+                  <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
+                    {social.items.map((item) => (
+                      <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+                        {item.label}
+                      </Link>
+                    ))}
+                  </Dropdown>
+                );
+              }
               return (
-                <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
-                  {social.items.map((item) => (
-                    <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
-                      {item.label}
-                    </Link>
-                  ))}
-                </Dropdown>
+                <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
+                  <Icon {...iconProps} />
+                </Link>
               );
-            }
-            return (
-              <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
-                <Icon {...iconProps} />
-              </Link>
-            );
-          })}
-        </Flex>
+            })}
+          </Flex>
+        </SocialIcons>
       </SocialEntry>
       <SettingsEntry>
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>

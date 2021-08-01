@@ -1299,6 +1299,20 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
+"@javaswap/eslint-config-java@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@javaswap/eslint-config-java/-/eslint-config-java-1.0.0.tgz#6ad774fe4451aaf05adb9f0f20cdf9cd888b7845"
+  integrity sha512-y9dv+pBpO1bw4FpjiID04OxtQoH7I5thvqqXEjr+oWKZtZLdWS4wNay/hEOdthf6rlB76+Wyrm1r7oW0u7fRyw==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^4.7.0"
+    "@typescript-eslint/parser" "^4.7.0"
+    eslint-config-airbnb "^18.2.1"
+    eslint-config-prettier "^6.15.0"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-jsx-a11y "^6.4.1"
+    eslint-plugin-react "^7.21.5"
+    eslint-plugin-react-hooks "^4.0.0"
+
 "@jest/console@^26.6.2":
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-26.6.2.tgz#4e04bc464014358b03ab4937805ee36a0aeb98f2"
@@ -1555,20 +1569,6 @@
   dependencies:
     mkdirp "^1.0.4"
     rimraf "^2.7.1"
-
-"@pancakeswap-libs/eslint-config-pancake@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/eslint-config-pancake/-/eslint-config-pancake-0.1.0.tgz#109863752b77106bf2721d639c9a17e89002879d"
-  integrity sha512-wJBZike/rd2f/9Vep6yNyA8qqRl7UBW55ppYvPaJa61HjethJ113hcUxWzgbQ35OfnLO5beuTBFqR/rypJ5V/A==
-  dependencies:
-    "@typescript-eslint/eslint-plugin" "^4.7.0"
-    "@typescript-eslint/parser" "^4.7.0"
-    eslint-config-airbnb "^18.2.1"
-    eslint-config-prettier "^6.15.0"
-    eslint-plugin-import "^2.22.1"
-    eslint-plugin-jsx-a11y "^6.4.1"
-    eslint-plugin-react "^7.21.5"
-    eslint-plugin-react-hooks "^4.0.0"
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.2":
   version "0.4.3"

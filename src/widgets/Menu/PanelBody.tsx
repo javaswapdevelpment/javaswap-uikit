@@ -4,9 +4,9 @@ import { useLocation } from "react-router-dom";
 import { SvgProps } from "../../components/Svg";
 import * as IconModule from "./icons";
 import Accordion from "./Accordion";
-import { MenuEntry, LinkLabel } from "./MenuEntry";
+import { MenuEntry, LinkLabel, LinkStatus } from "./MenuEntry";
 import MenuLink from "./MenuLink";
-import { PanelProps, PushedProps } from "./types";
+import { MenuSubEntry, PanelProps, PushedProps } from "./types";
 
 interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
@@ -21,6 +21,15 @@ const Container = styled.div`
   overflow-x: hidden;
   height: 100%;
 `;
+
+const IconSub = function (child: MenuSubEntry) {
+  const IconSub = Icons[!child.icon ? "entry.icon" : child.icon];
+
+  return (
+    <IconSub width="24px" mr="8px" />
+  )
+}
+
 
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   const location = useLocation();
@@ -49,7 +58,17 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               {isPushed &&
                 entry.items.map((item) => (
                   <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
+                    {
+                      item.icon && (
+                        IconSub(item)
+                      )
+                    }
                     <MenuLink href={item.href}>{item.label}</MenuLink>
+                    {item.status && (
+                      <LinkStatus color={item.status.color} fontSize="14px">
+                        {item.status.text}
+                      </LinkStatus>
+                    )}
                   </MenuEntry>
                 ))}
             </Accordion>
@@ -60,6 +79,11 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
             <MenuLink href={entry.href} onClick={handleClick}>
               {iconElement}
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
+              {entry.status && (
+                <LinkStatus color={entry.status.color} fontSize="14px">
+                  {entry.status.text}
+                </LinkStatus>
+              )}
             </MenuLink>
           </MenuEntry>
         );

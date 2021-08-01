@@ -29,6 +29,8 @@ export type Shadows = {
 
 export type Gradients = {
   bubblegum: string;
+  menuBorder: string;
+  buttonGradient: string;
 };
 
 export type Colors = {
@@ -48,6 +50,7 @@ export type Colors = {
   text: string;
   textDisabled: string;
   textSubtle: string;
+  title: string;
   borderColor: string;
   card: string;
 

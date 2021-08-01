@@ -45,13 +45,13 @@ export const WithSecondary: React.FC = () => {
   );
 };
 
-export const WithSecondaryAndProgressBunny: React.FC = () => {
+export const WithSecondaryAndProgressJava: React.FC = () => {
   const [primaryStep, setPrimaryStep] = useState(10);
   const [secondaryStep, setSecondaryStep] = useState(40);
 
   return (
     <div style={{ padding: "32px", width: "400px" }}>
-      <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} showProgressBunny />
+      <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} showProgressJava />
       <div style={{ marginTop: "32px" }}>
         <Button type="button" size="sm" onClick={() => setPrimaryStep(random(1, 100))}>
           Random Primary Progress

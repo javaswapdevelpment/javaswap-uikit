@@ -32,6 +32,7 @@ export const Connected: React.FC = () => {
         cakePriceUsd={0.23158668932877668}
         links={links}
         profile={null}
+        priceLink=""
       >
         <div>
           <Heading as="h1" mb="8px">
@@ -69,6 +70,7 @@ export const NotConnected: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         links={links}
+        priceLink=""
       >
         <div>
           <h1>Page body</h1>
@@ -101,6 +103,7 @@ export const WithNoProfile: React.FC = () => {
         currentLang="EN"
         cakePriceUsd={0.23158668932877668}
         links={links}
+        priceLink=""
         profile={{
           profileLink: "/profile",
           noProfileLink: "/no-profile",
@@ -144,11 +147,12 @@ export const WithProfile: React.FC = () => {
         cakePriceUsd={0.23158668932877668}
         links={links}
         profile={{
-          username: "pancakeswap",
-          image: "https://pancakeswap.finance/images/nfts/blueberries-preview.png",
+          username: "javaswap",
+          image: "https://javaswap.io/images/nfts/blueberries-preview.png",
           profileLink: "/profile",
           noProfileLink: "/no-profile",
         }}
+        priceLink=""
       >
         <div>
           <Heading as="h1" mb="8px">

@@ -4,9 +4,14 @@ import { SvgProps } from "../../../components/Svg/types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <Svg viewBox="0 0 24 24" {...props}>
-      <path d="M6 10C4.9 10 4 10.9 4 12C4 13.1 4.9 14 6 14C7.1 14 8 13.1 8 12C8 10.9 7.1 10 6 10ZM18 10C16.9 10 16 10.9 16 12C16 13.1 16.9 14 18 14C19.1 14 20 13.1 20 12C20 10.9 19.1 10 18 10ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z" />
+    <Svg viewBox="0 -4 24 10" {...props}>
+      <g id="Grupo_1041" data-name="Grupo 1041" transform="translate(-6550.028 -14341.396)">
+        <circle id="Elipse_42" data-name="Elipse 42" cx="1.75" cy="1.75" r="1.75" transform="translate(6550.628 14341.995)" fill="none" stroke="#9b2244" stroke-miterlimit="10" stroke-width="1.2" />
+        <circle id="Elipse_43" data-name="Elipse 43" cx="1.75" cy="1.75" r="1.75" transform="translate(6558.412 14341.995)" fill="none" stroke="#9b2244" stroke-miterlimit="10" stroke-width="1.2" />
+        <circle id="Elipse_44" data-name="Elipse 44" cx="1.75" cy="1.75" r="1.75" transform="translate(6566.196 14341.995)" fill="none" stroke="#9b2244" stroke-miterlimit="10" stroke-width="1.2" />
+      </g>
     </Svg>
+
   );
 };
 

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { SpinnerProps } from "./types";
-import { Svg, SvgProps } from "../Svg";
+import { Svg, SvgProps, ProgressJava } from "../Svg";
 
 const rotate = keyframes`
   from {
@@ -14,9 +14,7 @@ const rotate = keyframes`
 
 const SpinnerIcon: React.FC<SvgProps> = (props) => {
   return (
-    <Svg viewBox="0 0 96 96" {...props}>
-      <image width="96" height="96" href="/images/egg/9.png"/>
-    </Svg>
+      <ProgressJava viewBox="0 0 58 58" {...props} />
   );
 };
 

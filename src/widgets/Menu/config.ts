@@ -1,3 +1,20 @@
+import { LinkStatus } from "./types";
+
+export const status = {
+  LIVE: <LinkStatus>{
+    text: "LIVE",
+    color: "failure",
+  },
+  SOON: <LinkStatus>{
+    text: "Cooming soon",
+    color: "warning",
+  },
+  NEW: <LinkStatus>{
+    text: "NEW",
+    color: "success",
+  },
+};
+
 export const links = [
   {
     label: "Home",
@@ -5,18 +22,14 @@ export const links = [
     href: "/",
   },
   {
-    label: "Trade",
+    label: "Presale",
+    icon: "PresaleIcon",
+    href: "https://presale.javaswap.io/",
+  },
+  {
+    label: "Swap",
     icon: "TradeIcon",
-    items: [
-      {
-        label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
-      },
-      {
-        label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
-      },
-    ],
+    href: "https://exchange.javaswap.io",
   },
   {
     label: "Farms",
@@ -29,74 +42,53 @@ export const links = [
     href: "/syrup",
   },
   {
-    label: "Lottery",
-    icon: "TicketIcon",
-    href: "/lottery",
+    label: "Games",
+    icon: "GameIcon",
+    items: [
+      {
+        label: "JavaBid",
+        href: "/javabid",
+        icon: "JavaBidIcon"
+      },
+      {
+        label: "Lucky Lotto",
+        href: "/lottery",
+        icon: "TicketIcon"
+      },
+      {
+        label: "Flip Coin",
+        href: "/flip",
+        icon: "FlipCoinIcon"
+      },
+    ],
+  },
+  {
+    label: "Referrals",
+    icon: "ReferralIcon",
+    href: "/referral",
+    
   },
   {
     label: "NFT",
     icon: "NftIcon",
     href: "/nft",
-  },
-  {
-    label: "Profile & Teams",
-    icon: "GroupsIcon",
-    items: [
-      {
-        label: "Leaderboard",
-        href: "/",
-      },
-      {
-        label: "YourProfile",
-        href: "/",
-      },
-    ],
-    calloutClass: "rainbow",
-  },
-  {
-    label: "Info",
-    icon: "InfoIcon",
-    items: [
-      {
-        label: "Overview",
-        href: "https://pancakeswap.info",
-      },
-      {
-        label: "Tokens",
-        href: "https://pancakeswap.info/tokens",
-      },
-      {
-        label: "Pairs",
-        href: "https://pancakeswap.info/pairs",
-      },
-      {
-        label: "Accounts",
-        href: "https://pancakeswap.info/accounts",
-      },
-    ],
+    status: status.SOON,
   },
   {
     label: "IFO",
     icon: "IfoIcon",
-    items: [
-      {
-        label: "Next",
-        href: "/ifo",
-      },
-      {
-        label: "History",
-        href: "/ifo/history",
-      },
-    ],
+    href: "/ifo",
+    status: status.SOON,
+  },
+  {
+    label: "Analytics",
+    icon: "AnalyticIcon",
+    href: "/analytic",
   },
   {
     label: "More",
     icon: "MoreIcon",
     items: [
-      // {
-      //   label: "Voting",
-      //   href: "https://voting.pancakeswap.finance",
-      // },
       {
         label: "Github",
         href: "https://github.com/goosedefi/",
@@ -178,8 +170,8 @@ export const socials = [
     href: "https://twitter.com/goosedefi",
   },
   {
-    label: "Reddit",
-    icon: "RedditIcon",
+    label: "Medium",
+    icon: "MediumIcon",
     href: "https://www.reddit.com/r/GooseFinanceofficial",
   },
 ];

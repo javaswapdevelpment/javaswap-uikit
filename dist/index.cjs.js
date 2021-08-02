@@ -315,8 +315,17 @@ var Icon$j = function (props) {
 };
 
 var Icon$k = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("path", { d: "M19.43 12.98C19.47 12.66 19.5 12.34 19.5 12C19.5 11.66 19.47 11.34 19.43 11.02L21.54 9.37C21.73 9.22 21.78 8.95 21.66 8.73L19.66 5.27C19.54 5.05 19.27 4.97 19.05 5.05L16.56 6.05C16.04 5.65 15.48 5.32 14.87 5.07L14.49 2.42C14.46 2.18 14.25 2 14 2H9.99996C9.74996 2 9.53996 2.18 9.50996 2.42L9.12996 5.07C8.51996 5.32 7.95996 5.66 7.43996 6.05L4.94996 5.05C4.71996 4.96 4.45996 5.05 4.33996 5.27L2.33996 8.73C2.20996 8.95 2.26996 9.22 2.45996 9.37L4.56996 11.02C4.52996 11.34 4.49996 11.67 4.49996 12C4.49996 12.33 4.52996 12.66 4.56996 12.98L2.45996 14.63C2.26996 14.78 2.21996 15.05 2.33996 15.27L4.33996 18.73C4.45996 18.95 4.72996 19.03 4.94996 18.95L7.43996 17.95C7.95996 18.35 8.51996 18.68 9.12996 18.93L9.50996 21.58C9.53996 21.82 9.74996 22 9.99996 22H14C14.25 22 14.46 21.82 14.49 21.58L14.87 18.93C15.48 18.68 16.04 18.34 16.56 17.95L19.05 18.95C19.28 19.04 19.54 18.95 19.66 18.73L21.66 15.27C21.78 15.05 21.73 14.78 21.54 14.63L19.43 12.98ZM12 15.5C10.07 15.5 8.49996 13.93 8.49996 12C8.49996 10.07 10.07 8.5 12 8.5C13.93 8.5 15.5 10.07 15.5 12C15.5 13.93 13.93 15.5 12 15.5Z" })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 18 18" }, props),
+        React__default['default'].createElement("g", { id: "Grupo_14683", "data-name": "Grupo 14683", transform: "translate(-5707.353 -3417.249)" },
+            React__default['default'].createElement("line", { id: "L\u00EDnea_1461", "data-name": "L\u00EDnea 1461", x2: "10.367", transform: "translate(5713.402 3419.349)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }),
+            React__default['default'].createElement("line", { id: "L\u00EDnea_1462", "data-name": "L\u00EDnea 1462", x2: "9.05", transform: "translate(5707.353 3425.265)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }),
+            React__default['default'].createElement("line", { id: "L\u00EDnea_1463", "data-name": "L\u00EDnea 1463", x2: "8.305", transform: "translate(5715.464 3431.182)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }),
+            React__default['default'].createElement("circle", { id: "Elipse_931", "data-name": "Elipse 931", cx: "1.5", cy: "1.5", r: "1.5", transform: "translate(5710.402 3417.849)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }),
+            React__default['default'].createElement("circle", { id: "Elipse_932", "data-name": "Elipse 932", cx: "1.5", cy: "1.5", r: "1.5", transform: "translate(5716.402 3423.765)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }),
+            React__default['default'].createElement("circle", { id: "Elipse_933", "data-name": "Elipse 933", cx: "1.5", cy: "1.5", r: "1.5", transform: "translate(5712.464 3429.682)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }),
+            React__default['default'].createElement("line", { id: "L\u00EDnea_1464", "data-name": "L\u00EDnea 1464", x2: "1.925", transform: "translate(5707.353 3419.349)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }),
+            React__default['default'].createElement("line", { id: "L\u00EDnea_1465", "data-name": "L\u00EDnea 1465", x2: "3.242", transform: "translate(5720.527 3425.265)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }),
+            React__default['default'].createElement("line", { id: "L\u00EDnea_1466", "data-name": "L\u00EDnea 1466", x1: "3.587", transform: "translate(5707.815 3431.182)", fill: "none", stroke: "#9b2244", "stroke-miterlimit": "10", "stroke-width": "1.2" }))));
 };
 
 var Icon$l = function (props) {
@@ -2915,7 +2924,7 @@ var UserBlock = function (_a) {
 var Icon$1l = function (props) {
     var theme = styled.useTheme();
     var primaryColor = theme.isDark ? "#3C3742" : "#e9eaeb";
-    var secondaryColor = theme.isDark ? "#666171" : "#bdc2c4";
+    var secondaryColor = theme.isDark ? "#666171" : "#816C73";
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
         React__default['default'].createElement("path", { d: "M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z", fill: primaryColor }),
         React__default['default'].createElement("mask", { id: "A", "mask-type": "alpha", maskUnits: "userSpaceOnUse", x: "0", y: "0", width: "32", height: "32" },
@@ -3122,7 +3131,7 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#D8CACA", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#816C73", textDisabled: "#BDC2C4", textSubtle: "#D86D25", title: "#9B2244", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#D8CACA", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#FFF0EB", tertiary: "#ffffff", text: "#816C73", textDisabled: "#816C73", textSubtle: "#D86D25", title: "#9B2244", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
         menuBorder: "linear-gradient(#ffe88d 0%, #ffe88d 1.01%, #f5d485 6.85%, #da9e72 24.63%, #c37261 42.02%, #b14f54 58.61%, #a5364b 74.2%, #9d2745 88.42%, #9b2244 100%)",
         buttonGradient: "linear-gradient(to right, #ffe88d 0%, #ffe88d 1.01%, #b75b59 69.72%, #9b2244 100%)",
@@ -3259,7 +3268,7 @@ var dark$4 = {
 
 var light$5 = {
     background: lightColors.card,
-    hover: "#EEEAF4",
+    hover: "#FFF0EB",
 };
 var dark$5 = {
     background: darkColors.card,

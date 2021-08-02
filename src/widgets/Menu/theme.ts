@@ -3,7 +3,7 @@ import { NavTheme } from "./types";
 
 export const light: NavTheme = {
   background: lightColors.card,
-  hover: "#EEEAF4",
+  hover: "#FFF0EB",
 };
 
 export const dark: NavTheme = {

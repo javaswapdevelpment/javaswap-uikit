@@ -15,8 +15,8 @@ export declare const links: ({
     icon: string;
     items: {
         label: string;
-        href: string;
         icon: string;
+        href: string;
     }[];
     href?: undefined;
     status?: undefined;

@@ -29,7 +29,18 @@ export const links = [
   {
     label: "Swap",
     icon: "TradeIcon",
-    href: "https://exchange.javaswap.io",
+    items: [
+      {
+        label: "Trade",
+        icon: "TradeIcon",
+        href: "https://exchange.javaswap.io",
+      },
+      {
+        label: "Bridge",
+        href: "https://exchange.javaswap.io/#bridge",
+        icon: "BridgeIcon"
+      }
+    ]
   },
   {
     label: "Farms",
@@ -66,7 +77,7 @@ export const links = [
     label: "Referrals",
     icon: "ReferralIcon",
     href: "/referral",
-    
+
   },
   {
     label: "NFT",

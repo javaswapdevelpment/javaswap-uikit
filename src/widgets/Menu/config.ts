@@ -97,6 +97,11 @@ export const links = [
     href: "/analytic",
   },
   {
+    label: "Audits",
+    icon: "AuditIcon",
+    href: "/audits",
+  },
+  {
     label: "More",
     icon: "MoreIcon",
     items: [

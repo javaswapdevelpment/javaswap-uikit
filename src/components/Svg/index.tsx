@@ -45,5 +45,6 @@ export { default as JavaPlaceholder } from "./Icons/JavaPlaceholder";
 export { default as ProgressJava } from "./Icons/ProgressJava";
 export { default as HistoryIcon } from "./Icons/History";
 export { default as ConfirmIcon} from "./Icons/Confirm";
+export { default as AuditIcon } from "./Icons/Audit";
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";
